@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LandingPageVC.h
 //  MAREDO
 //
 //  Created by jijuncai on 8/18/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LandingPageVC : UIViewController
 
 @end
-
