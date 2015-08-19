@@ -50,7 +50,7 @@
     CGFloat x=0; // add images, labels and button to scrollView
     for(int i = 1; i < 4; i++){
         UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(x+0, 0, screenWidth, screenHeight)];
-        NSString *imageName = [NSString stringWithFormat:@"image%d.pgn",i];
+        NSString *imageName = [NSString stringWithFormat:@"Limage%d.pgn",i];
         [image setImage:[UIImage imageNamed:imageName]];
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, 150, screenWidth, 40)];
