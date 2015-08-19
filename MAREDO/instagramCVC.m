@@ -28,6 +28,20 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIBarButtonItem *searchBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAction)];
+    
+    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2699" style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
+    
+    UIFont *customFont = [UIFont fontWithName:@"Helvetica" size:24.0];
+    NSDictionary *fontDictionary = @{NSFontAttributeName : customFont};
+    [settingsButton setTitleTextAttributes:fontDictionary forState:UIControlStateNormal];
+    
+    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects:settingsButton, searchBarButtonItem, nil];
+    
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2630" style:UIBarButtonItemStylePlain target:self action:@selector(showMenu)];
+    
+    self.navigationItem.leftBarButtonItem = menuButton;
+    
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
     shoesImages = [NSArray arrayWithObjects:@"cimage1", @"cimage2", @"cimage3", @"cimage4", @"cimage5",  @"cimage6", @"cimage7", @"cimage8", @"cimage9", @"cimage10", @"cimage11", @"cimage12", @"cimage13", @"cimage14", @"cimage15", @"cimage16", @"cimage17", nil];
@@ -126,6 +140,20 @@ static NSString * const reuseIdentifier = @"Cell";
 //- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 //    [self performSegueWithIdentifier:@"showShoeDetail" sender:self];
 //}
+
+#pragma mark - help methods
+
+-(void)searchAction{
+    
+}
+
+-(void)showSettings{
+    
+}
+
+-(void)showMenu{
+    
+}
 
 #pragma mark <UICollectionViewDelegate>
 

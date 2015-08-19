@@ -28,6 +28,20 @@ static NSString * const reuseIdentifier = @"Cell";
     UIImage *image = [UIImage imageNamed:@"MAREDO.png"];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
     
+    UIBarButtonItem *searchBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAction)];
+    
+    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2699" style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
+    
+    UIFont *customFont = [UIFont fontWithName:@"Helvetica" size:24.0];
+    NSDictionary *fontDictionary = @{NSFontAttributeName : customFont};
+    [settingsButton setTitleTextAttributes:fontDictionary forState:UIControlStateNormal];
+    
+    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects:settingsButton, searchBarButtonItem, nil];
+    
+    UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2630" style:UIBarButtonItemStylePlain target:self action:@selector(showMenu)];
+    
+    self.navigationItem.leftBarButtonItem = menuButton;
+    
     self.collectionView.backgroundColor = [UIColor lightGrayColor];
     
     menShoesImages = [NSArray arrayWithObjects: @"cimage2", @"cimage3", @"cimage5", @"cimage10",  @"cimage12", @"cimage13", @"cimage14", @"cimage16", @"cimage17", nil];
@@ -141,6 +155,21 @@ static NSString * const reuseIdentifier = @"Cell";
     
     
 }
+
+#pragma mark - help methods
+
+-(void)searchAction{
+    
+}
+
+-(void)showSettings{
+    
+}
+
+-(void)showMenu{
+    
+}
+
 #pragma mark <UICollectionViewDelegate>
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
