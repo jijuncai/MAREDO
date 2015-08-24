@@ -10,7 +10,6 @@
 		B24C79E41B84203F00AF911E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C79E31B84203F00AF911E /* main.m */; };
 		B24C79E71B84203F00AF911E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C79E61B84203F00AF911E /* AppDelegate.m */; };
 		B24C79EA1B84203F00AF911E /* MAREDO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B24C79E81B84203F00AF911E /* MAREDO.xcdatamodeld */; };
-		B24C79ED1B84203F00AF911E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C79EC1B84203F00AF911E /* ViewController.m */; };
 		B24C79F01B84203F00AF911E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B24C79EE1B84203F00AF911E /* Main.storyboard */; };
 		B24C79F21B84203F00AF911E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B24C79F11B84203F00AF911E /* Images.xcassets */; };
 		B24C79F51B84203F00AF911E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24C79F31B84203F00AF911E /* LaunchScreen.xib */; };
