@@ -6,6 +6,6 @@ MAREDO iOS APP
 
 ## To do list
 - [x] Frameworks added
-- [ ] crash when scroll to the bottom in men and women views
+- [x] crash when scroll to the bottom in men and women views
 - [ ] login and sign up system
 - [ ] push notification to models from server
