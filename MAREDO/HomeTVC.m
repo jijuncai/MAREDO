@@ -31,13 +31,13 @@
     
     UIBarButtonItem *searchBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAction)];
     
-    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2699" style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
+    //UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(showSettings)];//[[UIBarButtonItem alloc] initWithTitle:@"\u2699" style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
     
-    UIFont *customFont = [UIFont fontWithName:@"Helvetica" size:24.0];
-    NSDictionary *fontDictionary = @{NSFontAttributeName : customFont};
-    [settingsButton setTitleTextAttributes:fontDictionary forState:UIControlStateNormal];
+    //UIFont *customFont = [UIFont fontWithName:@"Helvetica" size:24.0];
+    //NSDictionary *fontDictionary = @{NSFontAttributeName : customFont};
+    //[settingsButton setTitleTextAttributes:fontDictionary forState:UIControlStateNormal];
     
-    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects:settingsButton, searchBarButtonItem, nil];
+    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects: searchBarButtonItem, nil];
     
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2630" style:UIBarButtonItemStylePlain target:self action:@selector(showMenu)];
     

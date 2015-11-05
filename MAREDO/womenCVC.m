@@ -21,7 +21,7 @@
 
 @implementation womenCVC
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"womenCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,13 +30,13 @@ static NSString * const reuseIdentifier = @"Cell";
     
     UIBarButtonItem *searchBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAction)];
     
-    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2699" style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
+//    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2699" style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
+//    
+//    UIFont *customFont = [UIFont fontWithName:@"Helvetica" size:24.0];
+//    NSDictionary *fontDictionary = @{NSFontAttributeName : customFont};
+//    [settingsButton setTitleTextAttributes:fontDictionary forState:UIControlStateNormal];
     
-    UIFont *customFont = [UIFont fontWithName:@"Helvetica" size:24.0];
-    NSDictionary *fontDictionary = @{NSFontAttributeName : customFont};
-    [settingsButton setTitleTextAttributes:fontDictionary forState:UIControlStateNormal];
-    
-    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects:settingsButton, searchBarButtonItem, nil];
+    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects: searchBarButtonItem, nil];
     
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2630" style:UIBarButtonItemStylePlain target:self action:@selector(showMenu)];
     
@@ -44,9 +44,9 @@ static NSString * const reuseIdentifier = @"Cell";
     
     self.collectionView.backgroundColor = [UIColor lightGrayColor];
     
-    womenShoesImages = [NSArray arrayWithObjects: @"cimage1", @"cimage4", @"cimage6", @"cimage7",  @"cimage8", @"cimage9", @"cimage11", @"cimage14", @"cimage15", nil];
+    womenShoesImages = [NSArray arrayWithObjects: @"cimage1", @"cimage4", @"cimage6", @"cimage7",  @"cimage8", @"cimage9", @"cimage11", @"cimage14", @"cimage15", @"cimage1",nil];
     
-    shoesLabels = [NSArray arrayWithObjects:@"MareDo Free Style", @"MareDo Heels",@"MareDo Sandals", @"MareDo Flats", @"MareDo Loafers", @"MareDo Soft Style",@"MareDo Classic Style",@"MareDo Italy Style",@"MareDo China Style",nil];
+    shoesLabels = [NSArray arrayWithObjects:@"MareDo Free Style", @"MareDo Heels",@"MareDo Sandals", @"MareDo Flats", @"MareDo Loafers", @"MareDo Soft Style",@"MareDo Classic Style",@"MareDo Italy Style",@"MareDo China Style",@"MareDo Free Style",nil];
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -80,9 +80,10 @@ static NSString * const reuseIdentifier = @"Cell";
     shoes *shoe14 = [shoes new];
     shoes *shoe16 = [shoes new];
     shoes *shoe17 = [shoes new];
+    shoes *shoe18 = [shoes new];
     
     
-    self.womenShoes = [NSArray arrayWithObjects:shoe2,shoe3,shoe5,shoe10,shoe12,shoe13,shoe14,shoe16,shoe17,nil];
+    self.womenShoes = [NSArray arrayWithObjects:shoe2,shoe3,shoe5,shoe10,shoe12,shoe13,shoe14,shoe16,shoe17,shoe18,nil];
 }
 
 - (void)didReceiveMemoryWarning {

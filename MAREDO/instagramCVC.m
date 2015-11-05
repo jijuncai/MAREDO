@@ -29,14 +29,14 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
     
     UIBarButtonItem *searchBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAction)];
+//    
+//    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2699" style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
+//    
+//    UIFont *customFont = [UIFont fontWithName:@"Helvetica" size:24.0];
+//    NSDictionary *fontDictionary = @{NSFontAttributeName : customFont};
+//    [settingsButton setTitleTextAttributes:fontDictionary forState:UIControlStateNormal];
     
-    UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2699" style:UIBarButtonItemStylePlain target:self action:@selector(showSettings)];
-    
-    UIFont *customFont = [UIFont fontWithName:@"Helvetica" size:24.0];
-    NSDictionary *fontDictionary = @{NSFontAttributeName : customFont};
-    [settingsButton setTitleTextAttributes:fontDictionary forState:UIControlStateNormal];
-    
-    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects:settingsButton, searchBarButtonItem, nil];
+    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects: searchBarButtonItem, nil];
     
     UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2630" style:UIBarButtonItemStylePlain target:self action:@selector(showMenu)];
     
@@ -44,7 +44,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
-    shoesImages = [NSArray arrayWithObjects:@"cimage1", @"cimage2", @"cimage3", @"cimage4", @"cimage5",  @"cimage6", @"cimage7", @"cimage8", @"cimage9", @"cimage10", @"cimage11", @"cimage12", @"cimage13", @"cimage14", @"cimage15", @"cimage16", @"cimage17", nil];
+    shoesImages = [NSArray arrayWithObjects:@"cimage1", @"cimage2", @"cimage3", @"cimage4", @"cimage5",  @"cimage6", @"cimage7", @"cimage8", @"cimage9", @"cimage10", @"cimage11", @"cimage12", @"cimage13", @"cimage14", @"cimage15", @"cimage16", @"cimage17",@"cimage3", nil];
     
     
     
@@ -91,9 +91,10 @@ static NSString * const reuseIdentifier = @"Cell";
     shoes *shoe15 = [shoes new];
     shoes *shoe16 = [shoes new];
     shoes *shoe17 = [shoes new];
+    shoes *shoe18 = [shoes new];
     
     
-    self.shoes = [NSArray arrayWithObjects:shoe1,shoe2,shoe3,shoe4,shoe5,shoe6,shoe7,shoe8,shoe9,shoe10,shoe11,shoe12,shoe13,shoe14, shoe15,shoe16,shoe17,nil];
+    self.shoes = [NSArray arrayWithObjects:shoe1,shoe2,shoe3,shoe4,shoe5,shoe6,shoe7,shoe8,shoe9,shoe10,shoe11,shoe12,shoe13,shoe14, shoe15,shoe16,shoe17,shoe18,nil];
     
 }
 

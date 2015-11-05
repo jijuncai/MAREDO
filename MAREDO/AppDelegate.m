@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LandingPageVC.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"" clientKey:@""];
+    
     LandingPageVC *startVC = [[LandingPageVC alloc] init];
     self.window.rootViewController = startVC;
     self.window.backgroundColor = [UIColor whiteColor];

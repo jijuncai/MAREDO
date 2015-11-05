@@ -10,7 +10,6 @@
 		B21EF0A01B939B7300CA7AE4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21EF09F1B939B7300CA7AE4 /* AudioToolbox.framework */; };
 		B21EF0A11B939B9A00CA7AE4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21EF09A1B939B2E00CA7AE4 /* Accounts.framework */; };
 		B21EF0A21B939BA200CA7AE4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21EF09C1B939B3600CA7AE4 /* AdSupport.framework */; };
-		B21EF0A61B939C2800CA7AE4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21EF0A51B939C2800CA7AE4 /* Parse.framework */; };
 		B21EF0A81B939C4300CA7AE4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21EF0A71B939C4300CA7AE4 /* CFNetwork.framework */; };
 		B21EF0AA1B939C5400CA7AE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21EF0A91B939C5400CA7AE4 /* CoreGraphics.framework */; };
 		B21EF0AC1B939C6900CA7AE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21EF0AB1B939C6900CA7AE4 /* CoreLocation.framework */; };
@@ -51,6 +50,10 @@
 		B24C7A4A1B845FE900AF911E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C7A3D1B845FE900AF911E /* View+MASAdditions.m */; };
 		B24C7A4B1B845FE900AF911E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C7A401B845FE900AF911E /* ViewController+MASAdditions.m */; };
 		B24C7A4E1B8464BE00AF911E /* womenCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B24C7A4D1B8464BE00AF911E /* womenCVC.m */; };
+		B2826E9E1BC5AF090071120A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2826E9B1BC5AF090071120A /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B2826E9F1BC5AF090071120A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2826E9D1BC5AF090071120A /* RegisterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B2826EA31BC611FE0071120A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2826EA21BC611FE0071120A /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		B2826EA51BC612120071120A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2826EA41BC612120071120A /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +70,6 @@
 		B21EF09A1B939B2E00CA7AE4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B21EF09C1B939B3600CA7AE4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B21EF09F1B939B7300CA7AE4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		B21EF0A51B939C2800CA7AE4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B21EF0A71B939C4300CA7AE4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B21EF0A91B939C5400CA7AE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B21EF0AB1B939C6900CA7AE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -137,6 +139,12 @@
 		B24C7A401B845FE900AF911E /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		B24C7A4C1B8464BE00AF911E /* womenCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = womenCVC.h; sourceTree = "<group>"; };
 		B24C7A4D1B8464BE00AF911E /* womenCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = womenCVC.m; sourceTree = "<group>"; };
+		B2826E9A1BC5AF090071120A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B2826E9B1BC5AF090071120A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B2826E9C1BC5AF090071120A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		B2826E9D1BC5AF090071120A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		B2826EA21BC611FE0071120A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B2826EA41BC612120071120A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,7 @@
 				B21EF0BA1B93A02900CA7AE4 /* StoreKit.framework in Frameworks */,
 				B21EF0B81B93A01D00CA7AE4 /* Social.framework in Frameworks */,
 				B21EF0B61B93A01300CA7AE4 /* Security.framework in Frameworks */,
+				B2826EA31BC611FE0071120A /* Parse.framework in Frameworks */,
 				B21EF0B41B93A00A00CA7AE4 /* QuartzCore.framework in Frameworks */,
 				B21EF0B21B939FFF00CA7AE4 /* MobileCoreServices.framework in Frameworks */,
 				B21EF0B01B939FF300CA7AE4 /* libz.1.1.3.dylib in Frameworks */,
@@ -158,8 +167,8 @@
 				B21EF0AA1B939C5400CA7AE4 /* CoreGraphics.framework in Frameworks */,
 				B21EF0A81B939C4300CA7AE4 /* CFNetwork.framework in Frameworks */,
 				B21EF0A21B939BA200CA7AE4 /* AdSupport.framework in Frameworks */,
+				B2826EA51BC612120071120A /* Bolts.framework in Frameworks */,
 				B21EF0A11B939B9A00CA7AE4 /* Accounts.framework in Frameworks */,
-				B21EF0A61B939C2800CA7AE4 /* Parse.framework in Frameworks */,
 				B21EF0A01B939B7300CA7AE4 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +186,8 @@
 		B21EF09E1B939B3E00CA7AE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2826EA41BC612120071120A /* Bolts.framework */,
+				B2826EA21BC611FE0071120A /* Parse.framework */,
 				B21EF0BF1B93A05A00CA7AE4 /* Foundation.framework */,
 				B21EF0BD1B93A04400CA7AE4 /* UIKit.framework */,
 				B21EF0BB1B93A03900CA7AE4 /* SystemConfiguration.framework */,
@@ -193,7 +204,6 @@
 				B21EF09F1B939B7300CA7AE4 /* AudioToolbox.framework */,
 				B21EF09C1B939B3600CA7AE4 /* AdSupport.framework */,
 				B21EF09A1B939B2E00CA7AE4 /* Accounts.framework */,
-				B21EF0A51B939C2800CA7AE4 /* Parse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -263,6 +273,7 @@
 		B24C7A0A1B8450A600AF911E /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B2826E991BC5AEEA0071120A /* Login/Register */,
 				B24C7A0D1B84511A00AF911E /* LandingPageVC.h */,
 				B24C7A0E1B84511A00AF911E /* LandingPageVC.m */,
 				B24C7A141B845F4000AF911E /* instagramCVC.h */,
@@ -339,6 +350,17 @@
 				B24C7A401B845FE900AF911E /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		B2826E991BC5AEEA0071120A /* Login/Register */ = {
+			isa = PBXGroup;
+			children = (
+				B2826E9A1BC5AF090071120A /* LoginViewController.h */,
+				B2826E9B1BC5AF090071120A /* LoginViewController.m */,
+				B2826E9C1BC5AF090071120A /* RegisterViewController.h */,
+				B2826E9D1BC5AF090071120A /* RegisterViewController.m */,
+			);
+			name = Login/Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,11 +465,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B24C7A1F1B845F4000AF911E /* instagramShoesInfoVC.m in Sources */,
+				B2826E9E1BC5AF090071120A /* LoginViewController.m in Sources */,
 				B24C79E71B84203F00AF911E /* AppDelegate.m in Sources */,
 				B24C7A221B845F4000AF911E /* HomeTVC.m in Sources */,
 				B24C7A0F1B84511A00AF911E /* LandingPageVC.m in Sources */,
 				B24C7A421B845FE900AF911E /* MASCompositeConstraint.m in Sources */,
 				B24C79EA1B84203F00AF911E /* MAREDO.xcdatamodeld in Sources */,
+				B2826E9F1BC5AF090071120A /* RegisterViewController.m in Sources */,
 				B24C7A471B845FE900AF911E /* MASViewConstraint.m in Sources */,
 				B24C7A4E1B8464BE00AF911E /* womenCVC.m in Sources */,
 				B24C7A131B845F2C00AF911E /* CJADScrollView.m in Sources */,
