@@ -19,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [Parse setApplicationId:@"" clientKey:@""];
+    [Parse setApplicationId:@"00000000" clientKey:@"0000000000"];
     
     LandingPageVC *startVC = [[LandingPageVC alloc] init];
     self.window.rootViewController = startVC;
